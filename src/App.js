@@ -13,7 +13,7 @@ import { getCountryByCode } from "./getCountryByCode";
 import ReactCountryFlag from "react-country-flag";
 import Geocode from "react-geocode";
 
-Geocode.setApiKey(process.key.REACT_APP_LOCATION_API_KEY);
+Geocode.setApiKey(process.env.REACT_APP_LOCATION_API_KEY);
 
 function App() {
   const [address, setAddress] = useState("");
